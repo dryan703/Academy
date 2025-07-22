@@ -270,27 +270,27 @@
           max-width: 500px;
           margin: 10px auto;
         }
-        .programs {
+        .programs-cont {
           display: flex;
           gap: 30px;
           justify-content: center;
           flex-wrap: wrap;
         }
-        .card {
+        .scard {
           background-color: white;
           border-radius: 16px;
           overflow: hidden;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
-        .card img {
+        .scard img {
           width: 100%;
-          height: 250px;
+          height: 300px;
           object-fit: cover;
         }
-        .card-body {
+        .scard-body {
           padding: 20px;
         }
-        .card .badge {
+        .scard .badge {
           position: absolute;
           background: #facc15;
           color: #78350f;
@@ -334,6 +334,112 @@
           font-weight: 600;
           text-decoration: none;
           margin-top: 10px;
+        }
+        .programs {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          background: #eef2fc;
+          padding: 1.5rem;
+          flex-wrap: wrap;
+        }
+        .program {
+          background: #fff;
+          border-radius: 10px;
+          padding: 1rem 1.5rem;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+          width: 250px;
+        }
+        .program h3 {
+          margin: 0;
+          font-size: 1.1rem;
+          color: #002776;
+        }
+        .school {
+          font-weight: bold;
+        }.date {
+          display: block;
+          margin-top: 0.5rem;
+          color: #666;
+          font-size: 0.9rem;
+        }
+        .center {
+          text-align: center;
+          margin: 1rem 0;
+        }
+        .view-btn {
+          background: #2952ff;
+          color: white;
+          border: none;
+          padding: 0.5rem 1.2rem;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+        .community-section {
+          text-align: center;
+          padding: 2rem;
+        }
+        .tag {
+          color: green;
+          font-weight: bold;
+          font-size: 0.9rem;
+        }
+        .community-section h2 {
+          margin: 0.5rem 0;
+        }
+        .subtitle {
+          color: #555;
+          font-size: 0.95rem;
+          max-width: 600px;
+          margin: 0 auto 2rem;
+        }
+        .grid {
+          padding: 10px;
+          flex-wrap: wrap;
+          display: flex;
+          justify-content: center;
+        }
+        .grid-lit {
+            align-items: center;
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 30px;
+        }
+        .grid-sit {
+            align-items: center;
+            display: flex;
+            gap: 2rem;
+        }
+        .card {
+          background: #fff;
+          border-radius: 10px;
+          padding: 3.2rem;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          text-align: center;
+        }
+        .card h3 {
+          margin: 0.5rem 0;
+        }
+        .card p {
+          font-size: 0.9rem;
+          color: #555;
+        }
+        .card img {
+          width: 50px;
+          height: 50px;
+        }
+        .card button {
+          margin-top: 1rem;
+          background: #2952ff;
+          color: white;
+          border: none;
+          padding: 0.4rem 1rem;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+        .change.up {
+          color: green;
+          font-weight: bold;
         }
     </style>
 </head>
@@ -456,13 +562,13 @@
                 <h1>Featured Academic Programs</h1>
                 <p>Discover top-rated programs from leading universities worldwide. Connect with current students and alumni to get insider insights.</p>
             </div>
-            <div class="programs">
-                <div class="card">
+            <div class="programs-cont">
+                <div class="scard">
                     <div style="position: relative;">
                         <span class="badge">⭐ Feature</span>
                         <img src="img/110.jpeg" alt="Computer Science">
                     </div>
-                    <div class="card-body">
+                    <div class="scard-body">
                         <div class="rating">⭐ 4.9 &nbsp; 📆 2 Years</div>
                         <div class="title">Computer Science Masters</div>
                         <div class="university">Stanfort University</div>
@@ -472,12 +578,12 @@
                         <a href="#" class="button">View Program Details</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="scard">
                     <div style="position: relative;">
                         <span class="badge">⭐ Feature</span>
                         <img src="img/112.jpeg" alt="Economics">
                     </div>
-                    <div class="card-body">
+                    <div class="scard-body">
                         <div class="rating">⭐ 4.8 &nbsp; 📆 4 Years</div>
                         <div class="title">Economics PhD</div>
                         <div class="university">University of Oxford</div>
@@ -490,6 +596,73 @@
             </div>
         </section>
 
+        <section class="programs">
+            <div class="program">
+                <img src="" alt="">
+                <h3>Engineering Masters</h3>
+                <p><span class="school">ETH Zurich</span><br>Switzerland</p>
+                <span class="date">February 28, 2025</span>
+            </div>
+            <div class="program">
+                <div class="img"><img src="" alt=""></div>
+                <h3>Artificial Intelligence Masters</h3>
+                <p><span class="school">MIT</span><br>United States</p>
+                <span class="date">December 15, 2025</span>
+            </div>
+        </section>
+        <div class="center">
+            <button class="view-btn">View All Program →</button>
+        </div>
+        <section class="community-section">
+            <p class="tag">Academic Communities</p>
+            <h2>Connected by Field Of Study</h2>
+            <p class="subtitle">
+                Join vibrant communities and connect with a student and professor in your field. 
+                Share your knowledge, collaborate on research, and build your professional network.
+            </p>
+            <div class="grid">
+                <div class="grid-lit">
+                    <div class="card">
+                        <img src="" alt="">
+                        <h3>Computer science</h3>
+                        <p>15,420 members <span class="change up">+12%</span></p>
+                        <button>Join community</button>
+                    </div>
+                    <div class="card">
+                        <img src="#" alt="">
+                        <h3>Medicine</h3>
+                        <p>15,420 members <span class="change up">+16%</span></p>
+                        <button>Join community</button>
+                    </div>
+                    <div class="card">
+                        <img src="#" alt="">
+                        <h3>Engineering</h3>
+                        <p>15,420 members <span class="change up">+18%</span></p>
+                        <button>Join community</button>
+                    </div>
+                </div>
+                <div class="grid-sit">
+                    <div class="card">
+                        <img src="#" alt="">
+                        <h3>Economics</h3>
+                        <p>15,420 members <span class="change up">+8%</span></p>
+                        <button>Join community</button>
+                    </div>
+                    <div class="card">
+                        <img src="#" alt="">
+                        <h3>Psychology</h3>
+                        <p>15,420 members <span class="change up">+13%</span></p>
+                        <button>Join community</button>
+                    </div>
+                    <div class="card">
+                        <img src="#" alt="">
+                        <h3>Business</h3>
+                        <p>15,420 members <span class="change up">+15%</span></p>
+                        <button>Join community</button>
+                    </div>
+                </div>
+           </div>
+        </section>
     </main>
 </body>
 </html>
