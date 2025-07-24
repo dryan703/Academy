@@ -180,12 +180,6 @@
           font-size: 2rem;
           margin-bottom: 10px;
         }
-        .features .subtitle {
-          color: #6b7280;
-          max-width: 600px;
-          margin: auto;
-          margin-bottom: 40px;
-        }
         .feature-content {
           display: flex;
           flex-wrap: wrap;
@@ -248,7 +242,7 @@
         }
         .tag {
           background: #fff1e5;
-          color: #c2410c;
+          color: #dc5618;
           font-size: 14px;
           padding: 6px 14px;
           border-radius: 20px;
@@ -314,14 +308,16 @@
           font-size: 14px;
           margin-bottom: 10px;
         }
-
         .info {
           display: flex;
           flex-wrap: wrap;
-          gap: 10px;
+          gap: 40px;
           font-size: 14px;
           margin-bottom: 16px;
           color: #4b5563;
+        }
+        .info p {
+          margin-top: 10px;
         }
         .button {
           display: block;
@@ -375,7 +371,7 @@
         }
         .view-btn {
           background: #2952ff;
-          color: white;
+          color: black;
           border: none;
           padding: 0.5rem 1.2rem;
           border-radius: 6px;
@@ -385,10 +381,14 @@
           text-align: center;
           padding: 2rem;
         }
-        .tag {
+        .tags {
           color: green;
           font-weight: bold;
           font-size: 0.9rem;
+          background-color: #81f1cb;
+          display: inline-block;
+          padding: 6px 14px;
+          border-radius: 20px;
         }
         .community-section h2 {
           margin: 0.5rem 0;
@@ -417,7 +417,7 @@
             gap: 2rem;
         }
         .card {
-          background: #fff;
+          background: #f7f1f1;
           border-radius: 10px;
           padding: 3.2rem;
           box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -436,16 +436,19 @@
         }
         .card button {
           margin-top: 1rem;
-          background: #2952ff;
-          color: white;
+          color: black;
           border: none;
           padding: 0.4rem 1rem;
           border-radius: 6px;
           cursor: pointer;
+          font-size: 17px;
         }
         .change.up {
           color: green;
           font-weight: bold;
+          background: #a2f3d8;
+          border-radius: 10px;
+          padding: 4px;
         }
         .testimonials-section {
          text-align: center;
@@ -806,7 +809,8 @@
               <div class="title">Computer Science Masters</div>
               <div class="university">Stanfort University</div>
               <div class="info">
-               📍 United States • 👨‍🎓 970 Students • 📅 Due March 30, 2025 • 💰 $58,040
+               <div><p>📍 United States </p><br> • 👨‍🎓 970 Students </div>
+               <div><p>• 📅 Due March 30, 2025 </p><br>• 💰 $58,040</div>
               </div>
               <a href="#" class="button">View Program Details</a>
             </div>
@@ -821,7 +825,8 @@
               <div class="title">Economics PhD</div>
               <div class="university">University of Oxford</div>
               <div class="info">
-                📍 United Kingdom • 👨‍🎓 800 Students • 📅 Due January 30, 2025 • 💰 $28,040
+                <div><p>📍 United Kingdom </p><br>• 👨‍🎓 800 Students </div>
+                <div><p>• 📅 Due January 30, 2025</p><br>• 💰 $28,040</div>
               </div>
               <a href="#" class="button">View Program Details</a>
             </div>
@@ -853,7 +858,7 @@
       </div>
         
       <section class="community-section">
-        <p class="tag">Academic Communities</p>
+        <p class="tags">Academic Communities</p>
         <h2>Connected by Field Of Study</h2>
         <p class="subtitle">
           Join vibrant communities and connect with a student and professor in your field. 
